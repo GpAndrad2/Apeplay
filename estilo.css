@@ -1,0 +1,340 @@
+/* Estilização geral do site */
+
+/* Define a fonte padrão como Arial e remove margens, preenchimentos e bordas */
+body {
+    font-family: "Arial";
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Estilização do HEADER da página */
+
+/* Define o plano de fundo do cabeçalho como preto */
+header {
+    background: linear-gradient(white, black)
+}
+
+/* Estilização do LOGOTIPO */
+
+/* Define a largura do logotipo como 45% do elemento pai */
+.logo {
+    width: 25%;
+    transition: 0.3s;
+    position: relative;
+}
+
+.logo:hover{
+    transform: scale(1.1);
+}
+
+/* Estilização do MENU */
+
+/* Posiciona o menu à direita da página e alinha 100px a partir do topo */
+nav {
+    right: 0;
+    position: absolute;
+    top: 100px;
+}
+
+/* Configuração dos itens de menu */
+
+/* Exibe os itens de menu em linha e adiciona margem à direita de 15px entre eles */
+nav li {
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+/* Configuração dos links do menu */
+
+/* Transforma o texto dos links em maiúsculas, define cor, peso da fonte e tamanho da fonte */
+nav a {
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+/* Quando o mouse passa por cima dos links, muda a cor para vermelho e sublinha o texto */
+nav a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+/* Estilização da caixa do logotipo */
+
+/* Define a largura da caixa do logotipo como 940px e centraliza horizontalmente */
+.logocaixa {
+    width: 940px;
+    position: relative;
+    margin: auto;
+}
+
+/* Estilização do banner */
+
+/* Define a largura do banner como 100% */
+.banner {
+    width: 100%;
+}
+
+/* Estilização da imagem do hambúrguer */
+
+/* Define a largura da imagem do hambúrguer, alinha à esquerda e adiciona margem à direita */
+.spfc {
+    width: 130px;
+    float: left;
+    margin: 0 20px 0 150px;
+}
+
+/* Estilização da seção sobre a hamburgueria */
+
+/* Define o estilo do título da seção, centraliza, define tamanho da fonte */
+.titulo-spfc {
+    margin: 0;
+    clear: left;
+    text-align: center;
+    font-size: 70px;
+    padding-top: 2%;
+    color: white;
+}
+
+/* Estilização da área sobre a hamburgueria */
+
+/* Define largura, centraliza horizontalmente, adiciona fundo de gradiente */
+.area-spfc {
+    width: 100%;
+    text-align: justify;
+    margin: auto;
+    background: black; 
+    color: white; 
+    padding-bottom: 1%;
+}
+/* Títulos - Padrão */
+.titulo-padrao {
+    margin: 0;
+    clear: left;
+    text-align: center;
+    font-size: 70px;
+    padding-top: 2%;
+    color: white;
+}
+
+/* Estilização da sessão "Nosso Estabelecimento" (mapa) */
+.mapa {
+    background: black;
+}
+
+/* Estilização do parágrafo dentro da sessão "Nosso Estabelecimento" */
+.mapa p {
+    text-align: center;
+    color: white; 
+}
+
+/* Estilização do mapa */
+.mapa iframe {
+    margin: auto;
+    display: block;
+}
+
+/* Benefícios */
+.campeao {
+    background: linear-gradient(black, #5c5959);
+}
+
+/* Conteúdo dos benefícios */
+.conteudo-campeao {
+    width: 35%;
+    margin: 0 auto;
+    padding-top: 20px; /*Distância da parte de cima da última sessão*/
+}
+
+/* Lista de benefícios */
+.lista-campeao {
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+    /* Define um caractere especial como marcador de lista (neste caso, um emoji) */
+    list-style: '🐒';
+    padding-left: 25%;
+}
+
+/* Itens da lista de benefícios */
+.itens {
+    line-height: 2;
+    color: white;
+}
+
+/* Estilização do primeiro item da lista (negrito) */
+.itens:first-child {
+    font-weight: bold;
+}
+
+/* Imagens dos benefícios */
+.img_campeao {
+    width: 17%;
+    /* Adiciona uma sombra à imagem */
+    box-shadow: 10px 10px 5px 0px black;
+    opacity: 1;
+    /* Efeito de transição suave durante 1 segundo ao passar o mouse */
+    transition: 1s;
+}
+
+/* Efeito de redução de opacidade ao passar o mouse nas imagens */
+.img_campeao:hover {
+    opacity: 0.7;
+}
+
+/* Estilização do video */
+.video {
+    margin: auto;
+    display: block;
+}
+
+/* Estilização do Footer */
+footer {
+    text-align: center;
+    background: url("Assets/Imagens/banner.jpg");
+    background-size: 100% 100%; /* Isso definirá o tamanho do plano de fundo*/
+    padding: 80px;
+}
+
+.copyright{
+    color: white;
+    font-size: 12px;
+    margin: 20px;
+}
+
+.logo_footer{
+    width: 20%;
+}
+
+.area-produto{
+    background-color: black;
+    padding-top: 40px;
+}
+
+.texto{
+    font-size: 15px;
+    color: white;
+    text-align: center;
+}
+
+.lista-produto{
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 60px;
+}
+
+.quadrado-esquerda,
+.quadrado-central,
+.quadrado-direita{
+    background-color: white;
+    width: 300px;
+    height: 250px;
+    margin: auto;
+    border: 5px solid rgb(255, 255, 255);
+    border-radius: 4%;
+    transition: 1s;
+    margin: 30px;
+    display: inline-block;
+    position: relative;
+}
+
+.quadrado-esquerda{
+    background-image: url('Assets/Imagens/camiseta.jpg'); /* imagem no quadrado */
+    background-size: cover; /* imagem de fundo cubra toda a div */
+    opacity: 1;
+}
+.quadrado-central{
+    background-image: url('Assets/Imagens/acessorio.jpg'); /* imagem no quadrado */
+    background-size: cover; /* imagem de fundo cubra toda a div */
+    opacity: 1;
+}
+.quadrado-direita{
+    background-image: url('Assets/Imagens/pet.jpg'); /* imagem no quadrado */
+    background-size: cover; /* imagem de fundo cubra toda a div */
+    opacity: 1;
+}
+
+.quadrado-esquerda:hover,
+.quadrado-central:hover,
+.quadrado-direita:hover{
+    opacity: 0.5;
+    transform: scale(1.1);
+}
+
+.texto-quadrado {
+    position: center;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    text-shadow: 0 0 10px black;
+}
+
+/*Estilização da Página Contato*/
+.input-padrao{
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 85%;
+}
+
+.texto-padrao{
+    color:aliceblue;
+}
+
+.texto-form {
+    border: 2px solid #ffffff; 
+    border-radius: 5px;
+    width: 100%;
+    height: 52%;
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+}
+
+form{
+   margin: 0 25% 0 25%;
+}
+
+.input-padrao{
+    width: 80%;
+    height: 5%;
+    margin: 0.5% 7% 2% 7%;
+    display: block; /* Garante que o elemento seja exibido como bloco */
+}
+
+.input-mensagem{
+    width: 80%;
+    height: 40%;
+    margin: 0.5% 7% 2% 7%;
+    display: block; /* Garante que o elemento seja exibido como bloco */
+}
+
+label{
+    margin: 0 7% 2% 7%;
+    color: white;
+}
+
+/* Estilos para o botão de envio */
+.enviar {
+    background-color: #ff0000; /* Vermelho do São Paulo FC */
+    color: #fff;
+    padding: 2% 3%;
+    margin: 2% 0 0 45%;
+    border: 1px solid white;
+    border-radius: 3%;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+select {
+    width: 10%;
+    height: 5%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 5px 0;
+}
+
+.chk{
+    margin: 1%
+}
